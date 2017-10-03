@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+    mysql:
+        image: mysql
+        volumes:
+            - ./data:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: toor
+            MYSQL_DATABASE: MyDb
+            MYSQL_USER: myuser
+            MYSQL_PASSWORD: myuserpassword
+        ports:
+            - 3306:3306
