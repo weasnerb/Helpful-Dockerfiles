@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+    apache-tomcat:
+        image: tomcat:9
+        ports:
+            - 8080:8080
