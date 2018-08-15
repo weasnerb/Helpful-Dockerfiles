@@ -13,5 +13,5 @@ services:
       - NEO4J_dbms_shell_enabled=true
     volumes:
       - ./plugins:/plugins
-      - C:\Users\Isaiah\Downloads\area.csv:/data/csvs
+      - ./data:/data
       - ./import:/import
